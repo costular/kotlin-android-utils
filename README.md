@@ -42,7 +42,7 @@ getUriFromClipboard(): Uri?
 #### SharedPreferences.use(lambda)
 It automatically applies after lambda execution
 ``` kotlin
-val sharedPrefs = context.getPrefs()
+val sharedPrefs = context.getPreferences()
 sharedPrefs.use {
     putBoolean("first_use", false) // This refers to sharedPrefs instance
 }
