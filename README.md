@@ -35,6 +35,8 @@ copyTextToClipboard(value: String)
 copyUriToClipboard(uri: Uri)
 getTextFromClipboard(): CharSequence
 getUriFromClipboard(): Uri?
+getPreferences(): SharedPreferences
+getPreferences(name: String, mode: Int): SharedPreferences
 ```
 
 ### SharedPreferences
