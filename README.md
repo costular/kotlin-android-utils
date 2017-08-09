@@ -17,7 +17,7 @@ compile 'com.costular:kotlin-utils:0.1'
 
 It depends on utilities. Some of them just work as function extensions and you don't have to do anything special, just call a method like another one.
 
-### API 
+## API 
 
 ### Activity
 
