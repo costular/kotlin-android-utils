@@ -35,4 +35,4 @@ copyTextToClipboard(value: String)
 copyUriToClipboard(uri: Uri)
 getTextFromClipboard(): CharSequence
 getUriFromClipboard(): Uri?
-``
+```
