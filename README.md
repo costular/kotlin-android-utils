@@ -57,8 +57,8 @@ These methods are static.
 ``` kotlin 
 doWithVersion(version: Int, lambda) // ==
 doWithAtLeastVersion(version: Int, lambda) // >=
-doWithBiggerVersion(version: Int, lambda) // >
-doWithSmallerVersion(version: Int, lambda) // <
+doWithHigherVersion(version: Int, lambda) // >
+doWithLowerVersion(version: Int, lambda) // <
 ```
 
 Example

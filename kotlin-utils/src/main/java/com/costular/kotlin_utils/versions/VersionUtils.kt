@@ -21,13 +21,13 @@ class VersionUtils {
             }
         }
 
-        inline fun doWithBiggerVersion(version: Int, body: () -> Unit) {
+        inline fun doWithHigherVersion(version: Int, body: () -> Unit) {
             if (Build.VERSION.SDK_INT > version) {
                 body()
             }
         }
 
-        inline fun doWithSmallerVersion(version: Int, body: () -> Unit) {
+        inline fun doWithLowerVersion(version: Int, body: () -> Unit) {
             if (Build.VERSION.SDK_INT < version) {
                 body()
             }
