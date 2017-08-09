@@ -3,7 +3,9 @@ package com.costular.kotlin_utils.context
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
+import android.content.SharedPreferences
 import android.net.Uri
+import android.preference.PreferenceManager
 import android.support.annotation.UiThread
 
 /**
@@ -35,5 +37,13 @@ fun Context.getUriFromClipboard(): Uri? {
     }
 
     return null
+}
+
+fun Context.getPreferences(): SharedPreferences {
+    return PreferenceManager.getDefaultSharedPreferences(this)
+}
+
+fun Context.getPreferences(name: String, mode: Int = Context.MODE_PRIVATE): SharedPreferences {
+    return getSharedPreferences(name, mode)
 }
 
