@@ -9,7 +9,7 @@ Android utilities for easier and faster **Kotlin** programming.
 ## Download
 
 #### Gradle
-```groovy
+``` groovy
 compile 'com.costular:kotlin-utils:0.1'
 ```
 
@@ -21,4 +21,18 @@ It depends on utilities. Some of them just work as function extensions and you d
 
 ### Activity
 
-In progress...
+``` kotlin
+setFullScreen()
+showToolbar() // Support and native
+hideToolbar() // Support and native
+```
+
+### Context
+
+``` kotlin
+getClipboardManager()
+copyTextToClipboard(value: String)
+copyUriToClipboard(uri: Uri)
+getTextFromClipboard(): CharSequence
+getUriFromClipboard(): Uri?
+``
