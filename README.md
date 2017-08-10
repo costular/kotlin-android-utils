@@ -45,7 +45,7 @@ getPreferences(name: String, mode: Int): SharedPreferences
 It automatically applies after lambda execution
 ``` kotlin
 val sharedPrefs = context.getPreferences()
-sharedPrefs.use {
+sharedPrefs.edit {
     putBoolean("first_use", false) // This refers to sharedPrefs instance
 }
 ```
